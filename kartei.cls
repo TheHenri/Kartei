@@ -350,14 +350,17 @@
 %    \pgfshipoutphysicalpage
     \pgfpagesuselayout{resize to}[a4paper]
 	\newpage
-    \KOMAoptions{paper=a4,DIV=13}
+    \KOMAoptions{paper=a4,DIV=13,twoside=false}
 	\setlength{\pdfpagewidth}{21cm}
 	\setlength{\textwidth}{17.5cm}
 	\setlength{\pdfpageheight}{29.7cm}
   \else
-    \KOMAoptions{paper=a4,DIV=13}
+    \KOMAoptions{paper=a4,DIV=13,twoside=false}
   \fi
   \thispagestyle{empty}
+  \lohead{}
+  \cohead{}
+  \lehead{}
   \card@makeTOC
 \fi
 }
